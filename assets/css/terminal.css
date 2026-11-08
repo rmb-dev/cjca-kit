@@ -731,3 +731,16 @@ a.term-tag:hover,
     transform: none;
   }
 }
+
+/* ---------- Wide desktop layout (phones/tablets keep Bootstrap defaults) ---------- */
+
+@media (min-width: 1200px) {
+  main.container {
+    max-width: min(92vw, 1680px);
+  }
+
+  main.container > .markdown-body {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
