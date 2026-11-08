@@ -23,7 +23,6 @@
 <details class="xk-module term-panel{% if mod.placeholder %} xk-module--placeholder{% endif %}" id="{{ mod_id }}" style="--accent: {% if mod.placeholder %}var(--htb-muted){% else %}var(--htb-green){% endif %};" data-module data-term-panel data-reveal>
   <summary class="xk-module__head">
     <div class="term-bar">
-      <span class="term-lights" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="term-path" aria-hidden="true">~/cjca/{{ mod_num }}-{{ mod_id }}</span>
       {%- unless mod.placeholder %}
       <span class="term-bar__end xk-module__progress" data-progress></span>
@@ -81,7 +80,6 @@
       <section class="xk-section{% if is_kit %} xk-section--kit term-panel{% endif %}" id="{{ sec_id }}"{% if is_kit %} style="--accent: var(--htb-yellow);" data-term-panel{% endif %} data-section>
         {%- if is_kit %}
         <div class="term-bar" aria-hidden="true">
-          <span class="term-lights"><i></i><i></i><i></i></span>
           <span class="term-path">~/cjca/{{ mod_num }}/exam-kit</span>
         </div>
         {%- endif %}

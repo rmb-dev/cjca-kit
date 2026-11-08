@@ -23,7 +23,6 @@
 {%- assign tag_posts = site.posts | where_exp: "p", "p.tags contains tag" %}
 <section class="term-panel" id="tag-{{ tag | slugify }}" data-term-panel data-reveal>
   <div class="term-bar" aria-hidden="true">
-    <span class="term-lights"><i></i><i></i><i></i></span>
     <span class="term-path">~/blog/tags/{{ tag | slugify }}</span>
   </div>
   <div class="term-head">

@@ -4,7 +4,7 @@
 
    .term-heading   page/section heading with a typed shell prompt
    .term-panel     terminal-window panel (accent glow, grid, spotlight)
-   .term-bar       window title bar (traffic lights + path)
+   .term-bar       window title bar (path)
    .term-head      icon tile + title + outlined count
    .term-chip      tool/item tile with a tinted logo
    .term-tag       small monospace pill (tags, dates)
@@ -176,22 +176,6 @@ a.term-panel:hover {
   font-size: 0.75rem;
   color: var(--htb-muted);
 }
-
-.term-lights {
-  display: inline-flex;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.term-lights i {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.term-lights i:nth-child(1) { background: #ff5f57; }
-.term-lights i:nth-child(2) { background: #febc2e; }
-.term-lights i:nth-child(3) { background: #28c840; }
 
 .term-path {
   min-width: 0;
@@ -593,7 +577,7 @@ a.term-tag:hover,
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
 }
 
-/* ---------- Code blocks get a terminal title bar ---------- */
+/* ---------- Code blocks ---------- */
 
 .markdown-body div.highlighter-rouge {
   position: relative;
@@ -602,18 +586,6 @@ a.term-tag:hover,
   border-radius: 10px;
   overflow: hidden;
   background: var(--htb-bg-deep);
-}
-
-.markdown-body div.highlighter-rouge::before {
-  content: "";
-  display: block;
-  height: 30px;
-  border-bottom: 1px solid var(--htb-border);
-  background:
-    radial-gradient(circle at 16px 15px, #ff5f57 5px, transparent 5.5px),
-    radial-gradient(circle at 32px 15px, #febc2e 5px, transparent 5.5px),
-    radial-gradient(circle at 48px 15px, #28c840 5px, transparent 5.5px),
-    color-mix(in srgb, var(--htb-surface) 70%, transparent);
 }
 
 .markdown-body div.highlighter-rouge pre,
