@@ -1,10 +1,11 @@
-### [https://cjca-kit.github.io/](https://cjca-kit.github.io/)
+### [https://rmb-dev.github.io/cjca-kit//](https://rmb-dev.github.io/cjca-kit//)
+
 
 Web dev meets cyber — my blog, portfolio of projects, and experiments.
 
 
 cd ~/GitLab/rmb-dev.github.io
-git remote set-url origin git@github.com:rmb-dev/cjca-kit.github.io.git
+git remote set-url origin git@github.com:rmb-dev/cjca-kit.git
 ssh -T git@github.com        # type "yes" to trust GitHub's host key
 git push -u origin main
 
